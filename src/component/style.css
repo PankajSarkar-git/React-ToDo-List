@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+html{
+    font-size: 62.5%;
+}
+.main-div{
+
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #ff0067c9;
+}
+.main-div .chaild-div figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2.5rem;
+}
+.main-div .chaild-div figure .img{
+    height: 12rem;
+    width: 12rem;
+    margin: 1.5rem;
+    
+}
+.main-div .chaild-div figure figcaption{
+    font-size: 4rem;
+}
+.main-div .chaild-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-div .chaild-div .add-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-div .chaild-div .input{
+    margin-bottom: 3rem;
+}
+.main-div .chaild-div .add-items .input .form-contral{
+    font-size: 3.5rem;
+    border: none;
+    padding: 0.5rem;
+
+}
+.main-div .chaild-div .add-items .input i{
+    background-color:white;
+    font-size:4rem ;
+    padding-top: 0.2rem;
+    padding-bottom:0.8rem;
+    padding-right: 0.8rem;
+}
+/* --------------------------------item style--------------------------------  */
+
+.main-div .chaild-div .show-items .each-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem;
+    border: 1px solid black;
+    background-color: rgb(13, 197, 238);
+    padding: .8rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    
+}
+.main-div .chaild-div .show-items .each-items:hover{
+    background-color: blueviolet;
+}
+.main-div .chaild-div .show-items .each-items h2 {
+    margin: 0 1rem;
+
+}
+.main-div .chaild-div .show-items .each-items .todo-btn i{
+    font-size: 3rem;
+    /* margin-right:1.2rem ; */
+    margin-left: 1.5rem; 
+    cursor: pointer;
+}
+.main-div .chaild-div .show-items .each-items .todo-btn .fa-pen-to-square:hover{
+    color:rgb(88, 251, 88);
+}
+.main-div .chaild-div .show-items .each-items .todo-btn .fa-trash:hover{
+    color:red;
+}
+
+
+/* delet all btn style  */
+
+
+
+
+.main-div .chaild-div .add-items .delet-btn .btn{
+    height: 5.5rem;
+    width: 13.5rem;
+    color:lightsalmon;
+    background-color: aqua;
+    border-radius: 2rem;
+    font-size: 2rem;
+}
+.main-div .chaild-div .add-items .delet-btn .btn:hover{
+    background-color:lightsalmon;
+    color: aqua;
+}
+
+
+/* mobile responsive */
+
+@media (max-width:600px) {
+    .main-div .chaild-div .show-items .each-items{
+        font-size: 2rem;
+        padding: 0 0.4rem;
+    }
+    .main-div .chaild-div .add-items .input .form-contral{
+        font-size: 2rem;
+    }
+    .main-div .chaild-div .add-items .input i{
+        padding-top: 0.65rem;
+        font-size: 2rem;
+    }
+    .main-div .chaild-div figure .img{
+        height: 7rem;
+        width: inherit;
+    }
+    .main-div .chaild-div figure figcaption {
+       font-size: 3rem;
+    }
+    .main-div .chaild-div .show-items .each-items .todo-btn i{
+        font-size: 1.5rem;
+    }
+
+}
